@@ -1,0 +1,45 @@
+{
+  "name": "@baiyezi/mui",
+  "version": "0.0.1",
+  "description": "Material-UI high-level components",
+  "main": "index.js",
+  "repository": "git@github.com:baiyezi/mui.git",
+  "author": "662 <lya121@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baiyezi/mui/issues"
+  },
+  "homepage": "https://github.com/baiyezi/mui#readme",
+  "scripts": {
+    "clean": "npx rimraf ./dist",
+    "build": "npm run clean && tsc",
+    "test": "jest",
+    "postbuild": "cp README.md dist && cp package.json dist",
+    "postversion": "cp package.json ..",
+    "release": "semantic-release"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/lab": "^4.0.0-alpha.60",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@types/jest": "^27.0.1",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.8",
+    "babel-jest": "^27.1.1",
+    "jest": "^27.1.1",
+    "mdi-material-ui": "^6.22.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.1",
+    "semantic-release": "^17.4.7",
+    "ts-jest": "^27.0.5",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@baiyezi/react": "^1.1.1"
+  }
+}
