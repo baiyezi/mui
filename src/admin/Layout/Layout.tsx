@@ -6,8 +6,17 @@ import Sider, { SiderMenuDataItem } from '../Sider'
 import { useLocation } from 'react-router-dom'
 
 export interface LayoutProps {
+  /**
+   * Sider width
+   */
   leftWidth?: number
+  /**
+   * Site title
+   */
   title: React.ReactNode
+  /**
+   * Sider menus
+   */
   menus: SiderMenuDataItem[][]
 }
 
