@@ -1,6 +1,6 @@
 {
   "name": "@baiyezi/mui",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Material-UI high-level components",
   "main": "index.js",
   "repository": "git@github.com:baiyezi/mui.git",
