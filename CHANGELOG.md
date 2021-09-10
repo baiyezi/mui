@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/baiyezi/mui/compare/v1.0.0...v1.1.0) (2021-09-10)
+
+
+### Features
+
+* Add comment for Layout ([a5bb70f](https://github.com/baiyezi/mui/commit/a5bb70f92b576d1a9b701ccdf6c770451e8c3ff2))
+
 # 1.0.0 (2021-09-10)
 
 
