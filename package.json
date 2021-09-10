@@ -10,6 +10,10 @@
     "url": "https://github.com/baiyezi/mui/issues"
   },
   "homepage": "https://github.com/baiyezi/mui#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "clean": "npx rimraf ./dist",
     "build": "npm run clean && tsc",
