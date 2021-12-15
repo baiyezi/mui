@@ -1,6 +1,6 @@
 import React from 'react'
-import { Toolbar } from '@material-ui/core'
-import { createStyles, makeStyles, useTheme, Theme } from '@material-ui/core/styles'
+import { Toolbar, Theme } from '@mui/material'
+import { createStyles, makeStyles } from '@mui/styles'
 import Header, { Breadcrumb } from '../Header'
 import Sider, { SiderMenuDataItem } from '../Sider'
 import { useLocation } from 'react-router-dom'

@@ -1,7 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
-import { Drawer, Toolbar, List, Divider } from '@material-ui/core'
-import { createStyles, makeStyles, Theme } from '@material-ui/core'
+import { Drawer, Toolbar, List, Divider, Theme } from '@mui/material'
+import { createStyles, makeStyles } from '@mui/styles'
 import SiderMenu, { SiderMenuDataItem } from './SiderMenu'
 
 export * from './SiderMenu'

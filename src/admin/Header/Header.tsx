@@ -1,7 +1,7 @@
 import React from 'react'
-import { AppBar, Box, Breadcrumbs, Divider, IconButton, Theme, Toolbar, Typography } from '@material-ui/core'
-import { Link as MuiLink } from '@material-ui/core'
-import { makeStyles, createStyles } from '@material-ui/core'
+import { AppBar, Box, Breadcrumbs, Divider, IconButton } from '@mui/material'
+import { Theme, Toolbar, Typography, Link as MuiLink } from '@mui/material'
+import { makeStyles, createStyles } from '@mui/styles'
 import { Menu as MenuIcon } from 'mdi-material-ui'
 import { Link } from 'react-router-dom'
 
@@ -47,13 +47,24 @@ const Header: React.FC<HeaderProps> = props => {
           <Breadcrumbs aria-label="breadcrumb">
             {breadcrumbs?.map(item =>
               item.to ? (
-                <MuiLink component={Link} key={item.key} color="inherit" to={item.to} className={classes.breadcrumb}>
-                  {item.icon && React.cloneElement(item.icon, { className: classes.breadcrumbIcon })}
+                <MuiLink
+                  component={Link}
+                  key={item.key}
+                  color="inherit"
+                  to={item.to}
+                  className={classes.breadcrumb}>
+                  {item.icon &&
+                    React.cloneElement(item.icon, {
+                      className: classes.breadcrumbIcon,
+                    })}
                   {item.text}
                 </MuiLink>
               ) : (
                 <Typography key={item.key} className={classes.breadcrumb}>
-                  {item.icon && React.cloneElement(item.icon, { className: classes.breadcrumbIcon })}
+                  {item.icon &&
+                    React.cloneElement(item.icon, {
+                      className: classes.breadcrumbIcon,
+                    })}
                   {item.text}
                 </Typography>
               )

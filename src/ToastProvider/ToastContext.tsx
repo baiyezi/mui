@@ -39,10 +39,7 @@ export const useToast = () => {
     message => setToast({ open: true, message, color: 'error' }),
     [setToast]
   )
-  const info = useCallback(
-    message => setToast({ open: true, message, color: 'info' }),
-    [setToast]
-  )
+  const info = useCallback(message => setToast({ open: true, message, color: 'info' }), [setToast])
   const warning = useCallback(
     message => setToast({ open: true, message, color: 'warning' }),
     [setToast]

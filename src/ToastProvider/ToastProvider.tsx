@@ -1,6 +1,5 @@
 import React, { useCallback } from 'react'
-import { Slide, SlideProps, Snackbar } from '@material-ui/core'
-import { Alert } from '@material-ui/lab'
+import { Slide, SlideProps, Snackbar, Alert } from '@mui/material'
 import { Provider, useToast } from './ToastContext'
 
 type TransitionProps = Omit<SlideProps, 'direction'>

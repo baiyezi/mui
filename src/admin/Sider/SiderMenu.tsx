@@ -1,11 +1,5 @@
-import {
-  Collapse,
-  List,
-  ListItemIcon,
-  ListItemText,
-  ListItem,
-} from '@material-ui/core'
-import { createStyles, makeStyles, Theme } from '@material-ui/core'
+import { Collapse, List, ListItemIcon, ListItemText, ListItem, Theme } from '@mui/material'
+import { createStyles, makeStyles } from '@mui/styles'
 import { ChevronUp, ChevronDown } from 'mdi-material-ui'
 import { Link } from 'react-router-dom'
 import React from 'react'
@@ -92,12 +86,7 @@ export interface SiderMenuProps {
   selectedList?: SiderMenuDataItem[]
   childPadding: boolean
 }
-const SiderMenu: React.FC<SiderMenuProps> = ({
-  childPadding,
-  selectedList,
-  menus,
-  level = 0,
-}) => {
+const SiderMenu: React.FC<SiderMenuProps> = ({ childPadding, selectedList, menus, level = 0 }) => {
   return (
     <List>
       {menus.map((item: SiderMenuDataItem) => (
@@ -113,19 +102,16 @@ const SiderMenu: React.FC<SiderMenuProps> = ({
   )
 }
 
-const useStyles = makeStyles<Theme, { level: number; childPadding: boolean }>(
-  (theme: Theme) =>
-    createStyles({
-      listItem: {
-        paddingLeft: props =>
-          props.childPadding
-            ? theme.spacing(2 + 2 * props.level)
-            : theme.spacing(2),
-        transition: theme.transitions.create('padding', {
-          easing: theme.transitions.easing.sharp,
-          duration: theme.transitions.duration.enteringScreen,
-        }),
-      },
-    })
+const useStyles = makeStyles<Theme, { level: number; childPadding: boolean }>((theme: Theme) =>
+  createStyles({
+    listItem: {
+      paddingLeft: props =>
+        props.childPadding ? theme.spacing(2 + 2 * props.level) : theme.spacing(2),
+      transition: theme.transitions.create('padding', {
+        easing: theme.transitions.easing.sharp,
+        duration: theme.transitions.duration.enteringScreen,
+      }),
+    },
+  })
 )
 export default SiderMenu
