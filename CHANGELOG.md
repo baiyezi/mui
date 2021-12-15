@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/baiyezi/mui/compare/v1.1.0...v1.2.0) (2021-12-15)
+
+
+### Features
+
+* update @mui/material to latest ([96e3f14](https://github.com/baiyezi/mui/commit/96e3f14ce89f47fbf3fa99f4c420c32851a4ad93))
+
 # [1.1.0](https://github.com/baiyezi/mui/compare/v1.0.0...v1.1.0) (2021-09-10)
 
 
